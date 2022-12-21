@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 94%;
+    margin: auto;
+}
+
+header {
+    background-color: #285b35;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.row {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.col-3 {
+    width: 32%;
+    display: flex;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 0 20px gainsboro;
+    text-align: center;
+    font-size: 26px;
+}
+
+.card img {
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.py-20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav ul, nav li {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    list-style-type: none;
+    float: left;
+    position: relative;
+    margin-right: 20px;
+}
+
+nav li img {
+    margin-right: 10px;
+}
+
+nav li li {
+    margin-left: 0;
+    padding: 10px;
+    width: 240px;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    margin-left: -10px;
+    background-color: white;
+    width: 240px;
+    padding-top: 16px;
+}
+
+nav ul li:hover ul { /*para que salga un menú hacia abajo del menú de arriba*/
+    display: block;
+}
+
+nav a:hover{
+    color: green;
+}
+
+nav li li:hover {
+    background-color: gainsboro;
+    color: black;
+}
