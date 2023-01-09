@@ -90,6 +90,25 @@ a {
     color: gray;
 }
 
+#busta {
+    position: relative;
+    overflow: hidden; /*escondemos la barra de desplazamiento de abajo*/
+}
+
+img[src="img/fanta2.png"]{
+    position: absolute;
+    transition: left 1s;
+    left: 2000px; /*escondemos la imagen*/
+}
+
+#busta:hover img[src="img/fanta2.png"] {
+    left: 30px; /*aparece a imagen de la fanta encima de la imagen de busta*/
+}
+
+.card:hover img{ /*ponemos la imagen de las tarjetas opaca cuando estamos encima de la tarjeta*/
+    opacity: .5;
+}
+
 nav ul ul {
     display: none;
     position: absolute;
@@ -97,6 +116,7 @@ nav ul ul {
     background-color: white;
     width: 240px;
     padding-top: 16px;
+    z-index: 3;
 }
 
 nav ul li:hover ul { /*para que salga un menú hacia abajo del menú de arriba*/
@@ -110,4 +130,26 @@ nav a:hover{
 nav li li:hover {
     background-color: gainsboro;
     color: black;
+}
+
+.cajaverde {
+    background-color: darkgreen;
+    color: white;
+}
+
+.bb-2 {
+    padding: 10px;
+    border-bottom: 2px solid white ;
+}
+.col-4 {
+    width: 24%; /*para que haya un hueco entre el subrayado de una palabra y otra*/
+}
+
+.cajaverdeoscuro {
+    background-color: rgb(6, 73, 6);
+    color: white;
+}
+
+.txt-center {
+    text-align: center;
 }
